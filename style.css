@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(45deg, darkslateblue 0%, lightcoral 100%);
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    position: relative;
+    background-color: crimson;
+    padding: 60px 40px 16px;
+    border-radius: 20px;
+    box-shadow: 0 1px 0 #999, 0 2px 0 #999, 0 3px 0 #999, 1px 4px 0 #999, 2px 5px 0 #999, 3px 6px 0 #999, 4px 7px 0 #999, 5px 6px 0 #999, 0 0 6px #000;
+}
+
+.container h3 {
+    color: #fff;
+}
+
+.white-keys {
+    display: flex;
+    border: 2px solid black;
+}
+.white-keys kbd {
+    background-color: white;
+    display: inline-block;
+    padding: 160px 28px 40px;
+    border: 1px solid black;
+}
+
+.black-keys {
+    position: absolute;
+    display: flex;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.black-keys kbd {
+    top: -1px;
+    color: white;
+    background-color: black;
+    display: inline-block;
+    padding: 100px 14px 20px;
+    margin-right: 20px;
+    margin-top: -80px;
+}
+
+div.black-keys kbd.first {
+    position: relative;
+    left: -165px;
+}
+
+div.black-keys kbd.right {
+    position: absolute;
+    left: -95px;
+}
+
+div.black-keys kbd.left {
+    position: absolute;
+    left: 45px;
+}
+
+div.black-keys kbd.middle {
+    position: absolute;
+    left: 115px;
+}
+
+div.black-keys kbd.last {
+    position: absolute;
+    left: 185px;
+}
